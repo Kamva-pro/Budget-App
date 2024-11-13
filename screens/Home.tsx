@@ -143,7 +143,7 @@ export default function Home() {
           <View>
             <Text style={{ color: "gray" }}>Lifetime savings</Text>
             <Text style={{ fontWeight: "bold", fontSize: 28 }}>
-              $123,823.50
+              R123,823.50
             </Text>
           </View>
           <TouchableOpacity
@@ -189,7 +189,7 @@ function TransactionSummary({
   // Helper function to format monetary values
   const formatMoney = (value: number) => {
     const absValue = Math.abs(value).toFixed(2);
-    return `${value < 0 ? "-" : ""}$${absValue}`;
+    return `${value < 0 ? "-" : ""}R${absValue}`;
   };
 
   return (
