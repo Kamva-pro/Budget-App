@@ -1,27 +1,38 @@
 {
   "expo": {
     "name": "BudgetBuddy",
-    "slug": "BudgetBuddy",
+    "slug": "budget-buddy", 
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "automatic",  
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "contain", 
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"  
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.betomoedano.BudgetBuddy"
+      "bundleIdentifier": "com.betomoedano.BudgetBuddy",  
+      "buildNumber": "1", 
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true 
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.betomoedano.BudgetBuddy"
+      "package": "com.betomoedano.BudgetBuddy", 
+      "versionCode": 1, 
+      "permissions": [
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
